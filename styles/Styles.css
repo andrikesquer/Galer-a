@@ -2,6 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.header-container {
+    border-style: solid;
+    border-width: medium;
+    border-color: #ccc;
+    background-color: #ccc;
 }
 
 h1 {
@@ -13,7 +22,7 @@ h1 {
 .icon-container {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -25,18 +34,20 @@ h1 {
 }
 
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin: 20px;
     border: 2px solid #ccc; 
-    padding: 10px; 
     border-radius: 10px;
+    padding: 20px;
 }
 
-.gallery-item {
-    flex: 1 1 calc(33.333% - 20px);
-    margin: 10px;
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     transition: transform 0.2s;
 }
 
@@ -44,30 +55,54 @@ h1 {
     transform: scale(1.05);
 }
 
-.gallery-item img {
-    width: 100%;
-    height: auto; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 .founder-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 
-.founder-item {
-    flex: 1;
-    margin: 10px;
+.founder-text {
+    margin-right: 20px;
 }
 
-.founder-item img {
+.founder-image{
     width: 100%;
     height: auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.autor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 650px;
+    margin-right: 650px;
+    padding: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+}
+
+.autor-image {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.publicity-container{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.footer-container {
+    border-style: solid;
+    border-width: medium;
+    border-color: #ccc;
+    background-color: #ccc;
+    text-align: center;
 }
