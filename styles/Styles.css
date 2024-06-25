@@ -2,60 +2,57 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    flex-direction: center;
-    justify-content: center;
+    background-color: #CADBB7;
 }
 
-.header-container {
+header {
     border-style: solid;
     border-width: medium;
-    border-color: #ccc;
-    background-color: #ccc;
+    border-color: white;
+    background-color: white;
 }
 
 h1 {
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;
+    color: #485935; 
 }
 
-.icon-container {
+.iconos {
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
 }
 
-.icon-container img {
+.iconos img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
 
-.gallery-container {
+.galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 20px;
-    border: 2px solid #ccc; 
+    border: 2px solid #93A267;
     border-radius: 10px;
     padding: 20px;
+    background-color: #93A267;
 }
 
-.gallery-container img {
+.galeria img {
     width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
+    border: 2px solid white;
     border-radius: 10px;
-    transition: transform 0.2s;
 }
 
-.gallery-item:hover {
+.pelicula:hover {
     transform: scale(1.05);
 }
 
-.founder-container {
+.fundador {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,45 +61,43 @@ h1 {
     border-radius: 10px;
 }
 
-.founder-text {
+p {
     margin-right: 20px;
+    line-height: 2;
 }
 
-.founder-image{
+.fundador img {
     width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
-.autor-container {
+.autor {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 550px;
     margin-right: 550px;
     padding: 20px;
-    border: 2px solid #ccc; 
+    border: 2px solid white; 
     border-radius: 10px;
+    background-color: #93A267;
 }
 
-.autor-image {
+.autor img{
     width: 100%;
     object-fit: contain;
-    height: auto;
     border: 1px solid #ccc;
     border-radius: 50%;
 }
 
-.publicity-container{
+.publicidad{
     text-align: left;
-    margin-left: 20px;
 }
 
-.footer-container {
+.footer {
     border-style: solid;
-    border-width: medium;
-    border-color: #ccc;
-    background-color: #ccc;
+    border-color: white;
+    background-color: white;
     text-align: center;
 }
